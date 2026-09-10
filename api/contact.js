@@ -42,8 +42,8 @@ export default async function handler(req, res) {
     const host = process.env.SMTP_HOST || 'smtp.gmail.com';
     const port = Number(process.env.SMTP_PORT) || 465;
     const secure = process.env.SMTP_SECURE === 'true' || port === 465;
-    const user = process.env.SMTP_USER || 'panchalshravand@gmail.com';
-    const pass = process.env.SMTP_PASS || 'lxuq vjev hwbe kyzx';
+    const user = process.env.SMTP_USER || 'dhyanpatel1509@gmail.com';
+    const pass = process.env.SMTP_PASS || 'dtqc vdym icca dgvh';
 
     const transporter = nodemailer.createTransport({
       host,
@@ -58,7 +58,7 @@ export default async function handler(req, res) {
     // Primary and Secondary Recipients
     const recipients = process.env.RECIPIENT_EMAILS 
       ? process.env.RECIPIENT_EMAILS.split(',').map(e => e.trim()) 
-      : ['panchalshravand@gmail.com', 'shravanog01@gmail.com'];
+      : ['dhyanpatel1509@gmail.com'];
 
     const mailFrom = process.env.MAIL_FROM || `"Lucent Pharmatech Website" <${user}>`;
 
@@ -126,7 +126,7 @@ export default async function handler(req, res) {
             </div>
           </div>
           <div class="footer">
-            <p style="margin: 0 0 4px;">This email was automatically delivered to <strong>panchalshravand@gmail.com</strong> and <strong>shravanog01@gmail.com</strong>.</p>
+            <p style="margin: 0 0 4px;">This email was automatically delivered to <strong>dhyanpatel1509@gmail.com</strong> and <strong>shravanog01@gmail.com</strong>.</p>
             <p style="margin: 0;">Hit "Reply" directly in your email client to respond to <strong>${name}</strong> (${email}).</p>
           </div>
         </div>

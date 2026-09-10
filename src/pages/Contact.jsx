@@ -57,7 +57,7 @@ export default function Contact() {
       if (response.ok && data.success !== false) {
         setStatus({
           type: 'success',
-          message: 'Thank you! Your request has been sent successfully to panchalshravand@gmail.com and shravanog01@gmail.com. Our team will contact you shortly.',
+          message: 'Thank you! Your request has been sent successfully to dhyanpatel1509@gmail.com Our team will contact you shortly.',
         });
         form.reset();
       } else {
@@ -67,7 +67,7 @@ export default function Contact() {
       console.error('Contact submission error:', err);
       setStatus({
         type: 'error',
-        message: err.message || 'Could not connect to the mail server. Please ensure the backend SMTP service is running, or email us directly at panchalshravand@gmail.com.',
+        message: err.message || 'Could not connect to the mail server. Please ensure the backend SMTP service is running, or email us directly at dhyanpatel1509@gmail.com.',
       });
     } finally {
       setLoading(false);

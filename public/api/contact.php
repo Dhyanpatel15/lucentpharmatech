@@ -36,12 +36,12 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit();
 }
 
-$to = "panchalshravand@gmail.com, shravanog01@gmail.com";
+$to = "dhyanpatel1509@gmail.com, shravanog01@gmail.com";
 $email_subject = "[Web Inquiry] " . $subject . " - from " . $name;
 
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-$headers .= "From: Lucent Pharmatech Website <panchalshravand@gmail.com>\r\n";
+$headers .= "From: Lucent Pharmatech Website <dhyanpatel1509@gmail.com>\r\n";
 $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
@@ -92,7 +92,7 @@ $body = "
       </div>
     </div>
     <div class=\"footer\">
-      <p>Delivered to <strong>panchalshravand@gmail.com</strong> &amp; <strong>shravanog01@gmail.com</strong></p>
+      <p>Delivered to <strong>dhyanpatel1509@gmail.com</strong> &amp; <strong>shravanog01@gmail.com</strong></p>
     </div>
   </div>
 </body>
@@ -101,7 +101,7 @@ $body = "
 
 if (mail($to, $email_subject, $body, $headers)) {
     http_response_code(200);
-    echo json_encode(["success" => true, "message" => "Message sent successfully to panchalshravand@gmail.com and shravanog01@gmail.com"]);
+    echo json_encode(["success" => true, "message" => "Message sent successfully to dhyanpatel1509@gmail.com and shravanog01@gmail.com"]);
 } else {
     http_response_code(500);
     echo json_encode(["success" => false, "message" => "Failed to send email. Please check server mail settings."]);
