@@ -58,7 +58,7 @@ export default async function handler(req, res) {
     // Primary and Secondary Recipients
     const recipients = process.env.RECIPIENT_EMAILS 
       ? process.env.RECIPIENT_EMAILS.split(',').map(e => e.trim()) 
-      : ['dhyanpatel1509@gmail.com'];
+      : ['dhyanpatel1509@gmail.com','nrupesh@reeva.dev','nrupesh@reeva.digital'];
 
     const mailFrom = process.env.MAIL_FROM || `"Lucent Pharmatech Website" <${user}>`;
 
